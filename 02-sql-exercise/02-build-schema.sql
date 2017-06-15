@@ -1,3 +1,5 @@
+-- LINK: https://en.wikibooks.org/wiki/SQL_Exercises/The_computer_store
+
 CREATE TABLE Departments (
    Code INTEGER PRIMARY KEY NOT NULL,
    Name TEXT NOT NULL ,
