@@ -1,19 +1,19 @@
 -- LINK: https://en.wikibooks.org/wiki/SQL_Exercises/The_computer_store
 
 -- Select all warehouses.
-
+SELECT * FROM warehouses;
 
 -- Select all boxes with a value larger than $150.
-
+SELECT * FROM boxes WHERE value > 150;
 
 -- Select all distinct contents in all the boxes.
-
+SELECT DISTINCT contents FROM boxes;
 
 -- Select the average value of all the boxes.
-
+SELECT AVG(value) FROM boxes;
 
 -- Select the warehouse code and the average value of the boxes in each warehouse.
-
+SELECT warehouse, avg(value) FROM boxes GROUP BY warehouse;
 
 -- Same as previous exercise, but select only those warehouses where the average value of the boxes is greater than 150.
 
